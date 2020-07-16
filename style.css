@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+.card-group {
+  border-radius: 50%;
+}
+
+#map {
+  width: 100%;
+  background-color: grey;
+}
+
+h2 {
+  text-align: center;
+}
+#footer-content,
+#contactus-content,
+#portfolio-content,
+#navbarplusintro-content,
+#ourteam-content,
+#intro-content {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#contactus-div,
+#ourclients-div,
+#navbarplusintro-div {
+  background-color: #f2ec1d;
+}
+
+/* portfolio gallery */
+/* end portfolio gallery*/
+
+/* div height */
+#navbarplusintro-content {
+  height: 100vh;
+}
+#contactus-div {
+  height: 100vh;
+}
+#ourteamplusourclients-div {
+  height: 100vh;
+}
+
+#portfolio-div {
+}
+
+/* end div height */
