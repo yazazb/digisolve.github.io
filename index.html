@@ -3,169 +3,227 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigiSolve</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>DigiSolve</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="content">
-      <div id="navbarplusintro-div">
-      <div id="navbarplusintro-content">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">DigiSolve</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#ourteamplusourclients-div">Our Team</a>
-            <a class="nav-item nav-link" href="#ourclients-div">Our Clients</a>
-            <a class="nav-item nav-link" href="#portfolio-div">Our Portfolio</a>
-            <a class="nav-item nav-link" href="#contactus-div">Contact Us</a>
-            <!-- <a
-              class="nav-item nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            > -->
+    <!-- navbar -->
+    <div id="navbar-div">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
+        
+          <a class="navbar-brand" href="#">DigiSolve</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="#ourteam-div"
+                >Our Team</a
+              >
+              <a class="nav-item nav-link" href="#ourclients-div"
+                >Our Clients</a
+              >
+              <a class="nav-item nav-link" href="#portfolio-div"
+                >Our Portfolio</a
+              >
+              <a class="nav-item nav-link" href="#contactus-div">Contact Us</a>
+            </div>
           </div>
-        </div>
+        </span>
       </nav>
-      <div id="intro-content">
-        <div class="container ">
-          <div class="row">
-            <div class="col-sm ">
-              <h1>We make your digital dream a reality</h1>
-              <h3>Web Development</h3>
-              <h3>Mobile Development</h3>
-              <h3>Digital Media Solutions</h3>
-
-              <br>
-              <br>
-
-              <div class="" id="info">
-                <h3>10+ Years</h3>
-                <h3>100+ Projects</h3>
-              <h3>10000+ Customers </h3>
-              </div>
-            </div>
-            <div class="col-sm">
-              <img src="hero-img.png" alt="" srcset="" width="100%">
-            </div>
-          </div>
-        </div>
-        <img src="" alt="" srcset="">
-      </div>
-
     </div>
-  </div>
-    <div id="ourteamplusourclients-div">
-      <div id="ourteam-content">
-        <h2>OUR TEAM</h2>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <div id="team1" class="text-center">
-                <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle ">
-                <h5 class="text-center">Mahesh Nanaykakara</h5>
-                <h6 class="text-center">CEO</h6>
-              </div>
-            </div>
-            <div class="col-sm">
-              <div id="team2" class="text-center">
-                <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
-                <h5 class="text-center">Arun Mahawatta</h5>
-                <h6 class="text-center">CTO</h6>
-              </div>
-            </div>
-            <div class="col-sm">
-              <div id="team3" class="text-center">
-                <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
-                <h5 class="text-center">Nuwan Premarathna</h5>
-                <h6 class="text-center">COO</h6>
+
+    <!-- intro -->
+    <div id="intro-div">
+      <div class="container ">
+        <div class="row">
+          <div class="col-sm ">
+            <h1>We make your digital dream a reality</h1>
+            <h3>Web Development</h3>
+            <h3>Mobile Development</h3>
+            <h3>Digital Media Solutions</h3>
+
+            <br>
+            <br>
+
+            <div class="" id="info">
+              <h3>10+ Years</h3>
+              <h3>100+ Projects</h3>
+            <h3>10000+ Customers </h3>
             </div>
           </div>
           <div class="col-sm">
-            <div id="team4" class="text-center">
-              <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
-              <h5 class="text-center">Kaveen Fernando</h5>
-                <h6 class="text-center">Lead Developer</h6>
+            <img src="/assets/images/hero-img.png" alt="" srcset="" width="100%">
+          </div>
+          </div>
           </div>
         </div>
+      </div>
+    </div>
+
+  <!-- scrolltotopbutton -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-ourteam-->
+    <div id="ourteam-div">
+      <h2>OUR TEAM</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div id="team1" class="text-center">
+              <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle ">
+              <h5 class="text-center">Mahesh Nanaykakara</h5>
+              <h6 class="text-center">CEO</h6>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div id="team2" class="text-center">
+              <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
+              <h5 class="text-center">Arun Mahawatta</h5>
+              <h6 class="text-center">CTO</h6>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div id="team3" class="text-center">
+              <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
+              <h5 class="text-center">Nuwan Premarathna</h5>
+              <h6 class="text-center">COO</h6>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="team4" class="text-center">
+            <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
+            <h5 class="text-center">Kaveen Fernando</h5>
+              <h6 class="text-center">Lead Developer</h6>
         </div>
       </div>
       </div>
-      <div id="ourclients-div">
-        <div id="ourclients-content">
+
+      <div class="row">
+        <div class="col-sm">
+          <div id="team1" class="text-center">
+            <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle ">
+            <h5 class="text-center">Mahesh Nanaykakara</h5>
+            <h6 class="text-center">CEO</h6>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="team2" class="text-center">
+            <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
+            <h5 class="text-center">Arun Mahawatta</h5>
+            <h6 class="text-center">CTO</h6>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="team3" class="text-center">
+            <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
+            <h5 class="text-center">Nuwan Premarathna</h5>
+            <h6 class="text-center">COO</h6>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="team4" class="text-center">
+          <img src="https://picsum.photos/200/" alt="" srcset="" class="rounded-circle">
+          <h5 class="text-center">Kaveen Fernando</h5>
+            <h6 class="text-center">Lead Developer</h6>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- ourclients -->
+    <div id="ourclients-div">
+        
       <h2>OUR CLIENTS</h2>
       <div class="container">
         <div class="row">
           <div class="col-sm">
             <div id="team1" class="text-center">
               
-              <img src="cargillslogo.png" alt="" srcset="" class="" width="200px" height="200px">
+              <img src="/assets/images/cargillslogo.png" alt="" srcset="" class="" width="200px" height="200px">
             </div>
           </div>
           <div class="col-sm">
             <div id="team2" class="text-center">
-              <img src="dilmahlogo.png" alt="" srcset="" class="" width="200px" height="200px">
+              <img src="/assets/images/dilmahlogo.png" alt="" srcset="" class="" width="200px" height="200px">
             </div>
           </div>
           <div class="col-sm">
             <div id="team3" class="text-center">
-              <img src="laughfs.png" alt="" srcset="" class="" width="200px" height="200px">
+              <img src="/assets/images/laughfs.png" alt="" srcset="" class="" width="200px" height="200px">
           </div>
         </div>
         <div class="col-sm">
           <div id="team3" class="text-center">
-            <img src="keelslogo.png" alt="" srcset="" class="" width="200px" height="200px">
+            <img src="/assets/images/keelslogo.png" alt="" srcset="" class="" width="200px" height="200px">
         </div>
       </div>
       </div>
+      <br>
+      <div class="row">
+        <div class="col-sm">
+          <div id="team1" class="text-center">
+            
+            <img src="/assets/images/cargillslogo.png" alt="" srcset="" class="" width="200px" height="200px">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="team2" class="text-center">
+            <img src="/assets/images/dilmahlogo.png" alt="" srcset="" class="" width="200px" height="200px">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div id="team3" class="text-center">
+            <img src="/assets/images/laughfs.png" alt="" srcset="" class="" width="200px" height="200px">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="team3" class="text-center">
+          <img src="/assets/images/keelslogo.png" alt="" srcset="" class="" width="200px" height="200px">
       </div>
     </div>
-    </div> 
     </div>
-
+      </div>
+    </div>
+     
+    </div>
+    <!-- ourportfolio -->
     <div id="portfolio-div">
-      <div id="portfolio-content">
       <h2>OUR PORTFOLIO</h2>
       <div class="row">
-        <div class="col"><img src="https://picsum.photos/600/300" alt="" srcset="" width="" "></div>
-        <div class="col"><img src="https://picsum.photos/600/300" alt="" srcset="" width="" ></div>
-        <div class="w-100"></div>
-        <div class="col"><img src="https://picsum.photos/600/300" alt="" srcset="" width="" ></div>
-        <div class="col"><img src="https://picsum.photos/600/300" alt="" srcset="" width="" ></div>
-      </div>
-        
-          
-          </div>
-      </div>
-      
-    
-      
-      <div id="contactusplusfooter-div">
-      <div id="contactus-div">
-      <h2>CONTACT US</h2>
-      <div id="contactus-content" class="d-flex">
-        <div class="flex-fill mr-auto">
-          <!--The div element for the map -->
+        <div class="column">
+          <img src="/assets/images/neonbrand-GCQaYDCQwgc-unsplash.jpg">  
+          <img src="/assets/images/ben-kolde-bs2Ba7t69mM-unsplash.jpg">       
+        </div>
+        <div class="column">
+          <img src="/assets/images/balazs-ketyi-6ba_vdgx_go-unsplash.jpg">
+          <img src="/assets/images/dan-nelson-5hymX0di55Y-unsplash.jpg">
+        </div>
+    </div>  
+    <!-- contactus -->
+    <div id="contactus-div">
+    <h2>CONTACT US</h2>
+    <div class="container ">
+      <div class="row">
+        <div class="col-sm ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d623.865930906447!2d80.09139173587626!3d6.85440299177553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25387e40c6945%3A0x54d3af22d13d48cb!2sSLTC%20Hub!5e0!3m2!1sen!2slk!4v1594710435458!5m2!1sen!2slk"
-            width="600"
-            height="450"
+            width="100%"
+            height="100%"
             frameborder="0"
             style="border: 0;"
             allowfullscreen=""
@@ -173,34 +231,36 @@
             tabindex="0"
           ></iframe>
         </div>
-        <div class="flex-fill">
-          <p>
-           <b> We go the distance for your solution.
+        <div class="col-sm text-center">
+            <p>
+             <b> We go the distance for your solution.
+              <br />
+              Contact us today and together we can change your world.</b>
+            </p>
+            <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Send us a message</a>
+            <br>
+            <br>
+            <img src="/assets/images/envelope-regular.svg" width="50px" />
+            info@digisolve.com
             <br />
-            Contact us today and together we can change your world.</b>
-          </p>
-          <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Send us a message</a>
-          <br>
-          <br>
-          <img src="envelope-regular.svg" width="50px" />
-          info@digisolve.com
-          <br />
-          <img src="map-marked-alt-solid.svg" width="50px" />
-            Address: No 123, Meepe, Padukka.
-            <br />
-            <br />
-            Follow us on social media:
-          </p>
-          <img src="facebook-square-brands.svg"  width="50px" />
-          <img
-            src="instagram-square-brands.svg" width="50px"
-          />
-          <img src="twitter-square-brands.svg" width="50px" />
-          <img src="linkedin-brands.svg"  width="50px" />
+            <img src="/assets/images/map-marked-alt-solid.svg" width="50px" />
+              No 123, Meepe, Padukka.
+              <br />
+              <br />
+              Follow us on social media:
+            </p>
+            <img src="/assets/images/facebook-square-brands.svg"  width="50px" />
+            <img
+              src="/assets/images/twitter-square-brands.svg" width="50px"
+            />
+            <img src="/assets/images/instagram-square-brands.svg" width="50px" />
+            <img src="/assets/images/linkedin-brands.svg"  width="50px" />
+          </div>
         </div>
-      </div>
-    </div>
+        </div>
+        </div>
 
+    <!-- footer -->
     <div class="navbar bg-dark" id="footer">
       <div id="footer-content">
         <p class="text-secondary text-center">© 2010-2020 DigiSolve Pvt Ltd. All rights reserved.</p>
@@ -212,8 +272,6 @@
         </ul> -->
       </div>
     </div>
-  </div>
-</div>
-    <script src="script.js"></script>
+  <script src="/assets/js/script.js"></script>  
   </body>
 </html>
